@@ -33,6 +33,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        return "sad";
         $product = Product::create($request->all());
 
     return response()->json([

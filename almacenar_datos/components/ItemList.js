@@ -16,7 +16,7 @@ const ItemList = () => {
       data={items}
       renderItem={({ item }) => (
         <Text>
-          {item.name} - {item.description}{' '}
+          {item.nombre} - {item.descripcion}{item.tipo} - {item.stock}{' '}
           <Text onPress={() => handleRemove(item.id)}>Eliminar</Text>
         </Text>
       )}
