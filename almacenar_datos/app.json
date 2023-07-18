@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "almacenar_datos",
+    "slug": "almacenar_datos",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "almacenar_datos"
+}
