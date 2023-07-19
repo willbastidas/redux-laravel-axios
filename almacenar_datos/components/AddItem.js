@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TextInput, Button } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../reducers/reducer';
-import { axios } from 'axios';
+import axios from 'axios';
 
 
 const AddItem = () => {
@@ -14,7 +14,7 @@ const AddItem = () => {
 
   const handlePress = () => {
     dispatch(addItem({ nombre, descripcion, tipo, stock }));
-    axios.post('http://127.0.0.1:8000/api/productos', {
+   const {data} = axios.post('http://127.0.0.1:8000/api/productos', {
       nombre: nombre,
       descripcion: descripcion,
       tipo: tipo,
