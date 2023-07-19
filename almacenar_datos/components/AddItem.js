@@ -15,10 +15,10 @@ const AddItem = () => {
   const handlePress = () => {
     dispatch(addItem({ nombre, descripcion, tipo, stock }));
     axios.post('http://127.0.0.1:8000/api/productos', {
-      nombre1: nombre,
-      descripcion1: descripcion,
-      tipo1: tipo,
-      stock1: stock
+      nombre: nombre,
+      descripcion: descripcion,
+      tipo: tipo,
+      stock: stock
     })
     .then(function (response) {
       console.log(response);
