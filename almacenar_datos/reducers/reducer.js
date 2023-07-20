@@ -22,3 +22,10 @@ const itemsSlice = createSlice({
 
 export const { addItem, removeItem } = itemsSlice.actions;
 export default itemsSlice.reducer;
+/**    
+ * Se puede observar cómo Redux Toolkit es utilizado para dicho modelo mediante 
+ el uso de la función createSlice, la cual acepta el estado inicial, un objeto con 
+ funciones para efectuar los cambios en el estado (reducers) y un nombre para esta 
+ porción del estado. La función retorna un objeto que contiene las acciones y sus 
+ tipos para que podamos utilizarlas en la aplicación.
+ */

@@ -6,3 +6,9 @@ const store = configureStore({
 });
 
 export default store;
+
+/*
+El “configureStore” envuelve al “createStore” de Redux para proporcionar
+configuraciones simplificadas, que son pasadas por parámetro envueltas en un 
+objeto
+*/ 

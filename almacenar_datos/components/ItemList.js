@@ -11,6 +11,9 @@ const ItemList = () => {
     dispatch(removeItem(id));
   };
 
+
+  /* manera en la que se van a mostrar los productos y la manera 
+  en la que desea que el usuario vea los datos */
   return (
     <FlatList
       data={items}
@@ -26,3 +29,8 @@ const ItemList = () => {
 };
 
 export default ItemList;
+/*
+La función despachadora (o simplemente función dispatch) 
+es una función que acepta una acción o una acción asíncrona; 
+entonces puede o no despachar una o más acciones al store.
+*/ 
