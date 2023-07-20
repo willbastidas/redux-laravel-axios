@@ -14,7 +14,7 @@ const AddItem = () => {
 
   const handlePress = () => {
     dispatch(addItem({ nombre, descripcion, tipo, stock }));
-   const {data} = axios.post('http://127.0.0.1:8000/api/productos', {
+   const {data} = axios.post('http://192.168.85.239:8000/api/productos', {
       nombre: nombre,
       descripcion: descripcion,
       tipo: tipo,
@@ -51,6 +51,7 @@ const AddItem = () => {
       />
       <TextInput
         placeholder="Stock"
+        keyboardType='numeric'
         value={stock}
         onChangeText={setStock}
       />
